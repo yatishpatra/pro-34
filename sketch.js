@@ -11,7 +11,7 @@ var string;
 var backgroundImage
 var sun
 var monster;
-//var sound
+var sound
 function preload(){
     backgroundImage=loadImage("bg.png")
 sun=loadImage("sun.png")
