@@ -15,7 +15,7 @@ var sound
 function preload(){
     backgroundImage=loadImage("bg.png")
 sun=loadImage("sun.png")
-//sound=loadSound("the_avengers_theme.mp3")
+sound=loadSound("the_avengers_theme.mp3")
 }
 
 function setup(){
