@@ -11,11 +11,13 @@ var string;
 var backgroundImage
 var sun
 var monster;
-var sound
+var sound;
+var gameState ="end";
+
 function preload(){
     backgroundImage=loadImage("bg.png")
 sun=loadImage("sun.png")
-sound=loadSound("the_avengers_theme.mp3")
+sound=loadSound("8d82b5_Street_Fighter_New_Challenger_Sound_Effect.mp3")
 }
 
 function setup(){
@@ -101,6 +103,16 @@ image(sun,1200,10,100,100)
     superman.display();
     
     string.display();
+    
+    if ( gameState =="end") {
+    
+    sound.play();
+    textSize(90);
+    fill("black")
+    text("GameOver", 150, 300);
+    //return
+    
+  }
   
     
 }
@@ -108,3 +120,4 @@ image(sun,1200,10,100,100)
 function mouseDragged(){
     Matter.Body.setPosition(superman.body,{x:mouseX,y:mouseY})
 }
+
