@@ -12,7 +12,7 @@ var backgroundImage
 var sun
 var monster;
 var sound;
-var gameState ="end";
+
 
 function preload(){
     backgroundImage=loadImage("bg.png")
@@ -104,15 +104,7 @@ image(sun,1200,10,100,100)
     
     string.display();
     
-    if ( gameState =="end") {
-    
-    sound.play();
-    textSize(90);
-    fill("black")
-    text("GameOver", 150, 300);
-    //return
-    
-  }
+   
   
     
 }
